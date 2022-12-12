@@ -8,6 +8,7 @@ const stringData = data.split(/\r?\n/)
 
 // console.log(stringData)
 let score = 0
+let sum = 0
 
 function calculatePoints() {
     for (let i = 0; i < stringData.length; i++) {
@@ -39,10 +40,14 @@ function calculatePoints() {
             case 'C Z':
                 score = 6;
                 break;
+            default:
+                console.log(`Something is wrong on the ${i} array item`)
         }
+        sum = score + sum
     }
+    return sum
 
     
 }
 
-calculatePoints()
+console.log(calculatePoints())
