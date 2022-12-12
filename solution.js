@@ -6,7 +6,8 @@ let data = fs.readFileSync('data.txt', 'utf-8')
 
 const stringData = data.split(/\r?\n/)
 
-// console.log(stringData)
+console.log(stringData)
+
 let score = 0
 let sum = 0
 
@@ -50,4 +51,4 @@ function calculatePoints() {
     
 }
 
-console.log(calculatePoints(sum))
+// console.log(calculatePoints())
