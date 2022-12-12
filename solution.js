@@ -6,14 +6,14 @@ let data = fs.readFileSync('data.txt', 'utf-8')
 
 const stringData = data.split(/\r?\n/)
 
-console.log(stringData)
+// console.log(stringData)
 
 let score = 0
 let sum = 0
 
 function calculatePoints() {
     for (let i = 0; i < stringData.length; i++) {
-        switch (i) {
+        switch (stringData[i]) {
             case 'A X':
                 score =  4;
                 break;
@@ -37,6 +37,7 @@ function calculatePoints() {
                 break;
             case 'C Y':
                 score = 2;
+                console.log("C Y")
                 break;
             case 'C Z':
                 score = 6;
@@ -51,4 +52,5 @@ function calculatePoints() {
     
 }
 
-// console.log(calculatePoints())
+console.log(calculatePoints())
+
