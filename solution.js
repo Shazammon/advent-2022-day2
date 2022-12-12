@@ -37,7 +37,6 @@ function calculatePoints() {
                 break;
             case 'C Y':
                 score = 2;
-                console.log("C Y")
                 break;
             case 'C Z':
                 score = 6;
