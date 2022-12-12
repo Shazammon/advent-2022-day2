@@ -50,4 +50,4 @@ function calculatePoints() {
     
 }
 
-console.log(calculatePoints())
+console.log(calculatePoints(sum))
