@@ -41,9 +41,14 @@ function calculatePoints() {
             case 'C Z':
                 score = 7;
                 break;
+            case 'G M':
+                score = 7;
+                break;
             default:
                 console.log(`Something is wrong on the ${i} array item`)
         }
+
+
         sum = score + sum
     }
     return sum
